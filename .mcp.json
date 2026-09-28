@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ullbek": {
+      "type": "http",
+      "url": "https://api.ullbek.com/mcp/claude"
+    }
+  }
+}

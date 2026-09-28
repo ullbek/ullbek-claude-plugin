@@ -1,0 +1,24 @@
+{
+  "name": "ullbek",
+  "displayName": "Ullbek \u2014 AI website builder",
+  "version": "1.0.2",
+  "description": "Build, preview and publish a real website from the conversation. Claude writes the pages on Ullbek, hands you a private preview link, and publishes to a free address or your own domain.",
+  "author": {
+    "name": "DeboLabs Pty Ltd",
+    "url": "https://www.ullbek.com"
+  },
+  "homepage": "https://www.ullbek.com/docs/use-ullbek-in-claude",
+  "privacyPolicyUrl": "https://www.ullbek.com/privacy",
+  "repository": "https://github.com/ullbek/ullbek-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "website",
+    "website builder",
+    "publish",
+    "hosting",
+    "landing page",
+    "html",
+    "custom domain",
+    "mcp"
+  ]
+}

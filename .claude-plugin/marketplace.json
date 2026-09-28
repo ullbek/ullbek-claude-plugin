@@ -1,0 +1,14 @@
+{
+  "name": "ullbek",
+  "description": "Ullbek \u2014 build, preview and publish a real website from the conversation.",
+  "owner": {
+    "name": "DeboLabs Pty Ltd",
+    "url": "https://www.ullbek.com"
+  },
+  "plugins": [
+    {
+      "name": "ullbek",
+      "source": "./"
+    }
+  ]
+}
