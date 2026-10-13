@@ -8,7 +8,7 @@ This plugin connects Claude to your Ullbek account and teaches it how to build w
 
 | Component | What it does |
 |---|---|
-| **Ullbek connector** (remote MCP server) | Sites, files, previews, screenshots, publishing, custom domains, form submissions. Signs you in through your browser; nothing to configure. |
+| **Ullbek connector** (remote MCP server) | Sites, files, previews, screenshots, publishing, custom domains (one you already own, or a new one found and bought from the conversation), form submissions. Signs you in through your browser; nothing to configure. |
 | `/ullbek:website` | Build or improve a site from what you tell Claude: preview, iterate, publish. |
 | `/ullbek:deploy-folder` | Put a static site from your project folder online on Ullbek. |
 | `/ullbek:connect` | Sign in and confirm the connection works. |
