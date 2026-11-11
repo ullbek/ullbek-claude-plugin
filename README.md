@@ -24,10 +24,12 @@ This plugin connects Claude to your Ullbek account and teaches it how to build w
 /plugin install ullbek --marketplace ullbek/ullbek-claude-plugin
 ```
 
-Then connect your account. On claude.ai and in Cowork, open the plugin's **Connectors** tab and
-connect Ullbek. In Claude Code, run `/mcp`, choose **plugin:ullbek:ullbek** and **Authenticate**, or
-run `/ullbek:connect`. Your browser opens Ullbek's sign-in page: continue with Google or email, or
-create a free account right there, and approve the connection.
+Then connect your account — installing alone doesn't. On claude.ai, the desktop app and Cowork: open
+**Customize → Plugins → Ullbek — AI website builder → Connectors**, and press **Connect** next to
+**ullbek** (the Directory page calls it **Finish setup**). In Claude Code, run `/mcp`, choose
+**plugin:ullbek:ullbek** and **Authenticate**. Or just ask Claude to "connect Ullbek" and it walks you
+through it (`/ullbek:connect`). Your browser opens Ullbek's sign-in page: continue with Google or email,
+or create a free account right there, and approve the connection.
 
 ## Try it
 

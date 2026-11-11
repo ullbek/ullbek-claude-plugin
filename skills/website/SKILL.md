@@ -4,7 +4,11 @@ description: Build, preview and publish a real website on Ullbek from what the u
 argument-hint: [what the site is for]
 ---
 
-You are building a real, custom website on Ullbek: plain HTML, CSS and vanilla JavaScript files, served exactly as written, hosted by Ullbek. No framework, no build step. The Ullbek MCP server's own instructions describe every tool; this skill is the choreography for doing it well from Claude Code.
+You are building a real, custom website on Ullbek: plain HTML, CSS and vanilla JavaScript files, served exactly as written, hosted by Ullbek. No framework, no build step. The Ullbek MCP server's own instructions describe every tool; this skill is the choreography for doing it well, in any Claude app.
+
+## First: is Ullbek connected?
+
+The site is built through the Ullbek tools (`list_sites`, `create_site`, `write_file`, `publish_site` and the rest). Installing the plugin doesn't connect them: the user connects their Ullbek account once. If those tools are missing, or a call answers "needs authentication", stop and run the `connect` skill (`/ullbek:connect`): it gives the user the one-minute steps for the app they're in, free, with an account created on the spot if they need one. Don't build the site in the chat instead: what they asked for is a real, live website, and that needs the connection. Once `list_sites` answers, carry on below.
 
 ## Before you write anything
 
