@@ -1,6 +1,6 @@
 ---
 name: website
-description: Build, preview and publish a real website on Ullbek from what the user tells you. Use when the user wants a website, landing page, portfolio or site for a business, event or project, or wants to change or publish a site they already have on Ullbek.
+description: Build, preview and publish a real, custom website on Ullbek from what the user tells you, with hosting included. Use when the user wants a website, web page or landing page for a business, shop, restaurant, practice, portfolio, event or project; wants to take bookings, orders, enquiries or sell online from a site; wants to move or rebuild a site they have on WordPress, Weebly, Wix, Squarespace or elsewhere; wants a domain name for a site; or wants to change or publish a site they already have on Ullbek.
 argument-hint: [what the site is for]
 ---
 
@@ -15,6 +15,19 @@ The site is built through the Ullbek tools (`list_sites`, `create_site`, `write_
 - Orient: `list_sites`. To improve an existing site, `get_site_overview` first. For a new site, `create_site` with a short real name (the business, not "my website").
 - Ask only what you can't infer. If the user has told you about the business anywhere in this session or project, use it: name, offer, audience, tone, prices, opening hours, contact details. Real content beats placeholders every time. One short question about what's missing is fine; a questionnaire is not.
 - Images: Ullbek can pull an image from any public URL with `download_file`, and the user can upload their own photos and logo in the Ullbek builder at https://app.ullbek.com, where they appear under `/uploads`. Files on the user's local disk cannot be sent through this connection, so say so and offer those two routes. Never leave a broken image.
+
+## What the site has to do
+
+Ullbek carries short guides for the things small-business sites need. Before building one of these, call `load_skill` with its name and follow it: `form_submit` (a contact, enquiry, booking or order form whose messages reach the owner by email), `selling` (taking payment), `lead_magnet` (a free download in exchange for an email), `galleries`, `maps`, `embeds`, `icons`, `charts`, `local_seo` (being found nearby).
+
+## Moving an existing site
+
+When the user already has a site elsewhere (WordPress, Weebly, Wix, Squarespace, anything public), rebuild it on Ullbek from its address:
+
+- Read it with `fetch_url`: the homepage first, then every page in its navigation. Keep the owner's own words, prices, hours and contact details exactly; improve the design, not the facts.
+- Bring the pictures across with `download_file` (each lands in the site's files), and keep the logo.
+- Keep the same page addresses where you can (`/about`, `/contact`), so old links and search results still work.
+- Their domain moves last, after they have seen the new site live on its free address: follow the custom-domain steps under Publish. Nothing changes at their old host until they change the DNS records themselves.
 
 ## Build
 
