@@ -24,9 +24,14 @@ This plugin connects Claude to your Ullbek account and teaches it how to build w
 /plugin install ullbek --marketplace ullbek/ullbek-claude-plugin
 ```
 
-Then connect your account — installing alone doesn't. On claude.ai, the desktop app and Cowork: open
-**Customize → Plugins → Ullbek — AI website builder → Connectors**, and press **Connect** next to
-**ullbek** (the Directory page calls it **Finish setup**). In Claude Code, run `/mcp`, choose
+**You can start building straight away.** Ask for a website and Claude builds a private draft on Ullbek
+with no account. You connect a free Ullbek account when you want it published: Claude shows a sign-in
+card in the conversation (in Claude Code it asks you to run `/mcp`). A draft nobody connects is kept
+for a week.
+
+If Claude says Ullbek isn't available or needs connecting first, connect it yourself. On claude.ai, the
+desktop app and Cowork: open **Customize → Plugins → Ullbek — AI website builder → Connectors**, and
+press **Connect** next to **ullbek** (the Directory page calls it **Finish setup**). In Claude Code, run `/mcp`, choose
 **plugin:ullbek:ullbek** and **Authenticate**. Or just ask Claude to "connect Ullbek" and it walks you
 through it (`/ullbek:connect`). Your browser opens Ullbek's sign-in page: continue with Google or email,
 or create a free account right there, and approve the connection.
@@ -40,7 +45,7 @@ Claude creates the site, writes the pages, checks its own work, and gives you a 
 ## Good to know
 
 - **Same account, two doors.** Everything Claude builds is in your normal Ullbek account. Open [app.ullbek.com](https://app.ullbek.com) any time to continue in the Ullbek builder.
-- **Claude can never charge you.** Premium hosting and domains are paid only on a secure checkout page you open in your own browser.
+- **Nothing is charged without your yes.** Claude never sees or asks for your card details. Premium hosting, domains and credits are paid on a secure checkout page you open in your own browser; if you have saved a way to pay in your Ullbek account, Claude names the price and that way to pay, and it is charged only after you say yes.
 - **Images.** Claude can fetch images from public URLs and use anything you upload in the Ullbek builder. Files on your disk can't be sent through the connection.
 - **Rate limits** apply per account and are set for real building.
 
