@@ -8,10 +8,10 @@ This plugin connects Claude to your Ullbek account and teaches it how to build w
 
 | Component | What it does |
 |---|---|
-| **Ullbek connector** (remote MCP server) | Sites, files, previews, screenshots, publishing, custom domains (one you already own, or a new one found and bought from the conversation), form submissions. Signs you in through your browser; nothing to configure. |
+| **Ullbek connector** (remote MCP server) | Sites, files, previews, screenshots, publishing, custom domains (one you already own, or a new one found and bought from the conversation), form submissions. Signs you in through your browser when you publish; nothing to configure. |
 | `/ullbek:website` | Build or improve a site from what you tell Claude: preview, iterate, publish. |
 | `/ullbek:deploy-folder` | Put a static site from your project folder online on Ullbek. |
-| `/ullbek:connect` | Sign in and confirm the connection works. |
+| `/ullbek:connect` | Turn the connection on, or sign in, and confirm it works. |
 
 ## Install
 
@@ -24,17 +24,20 @@ This plugin connects Claude to your Ullbek account and teaches it how to build w
 /plugin install ullbek --marketplace ullbek/ullbek-claude-plugin
 ```
 
-**You can start building straight away.** Ask for a website and Claude builds a private draft on Ullbek
-with no account. You connect a free Ullbek account when you want it published: Claude shows a sign-in
-card in the conversation (in Claude Code it asks you to run `/mcp`). A draft nobody connects is kept
-for a week.
+**On claude.ai, the desktop app and Cowork, turn the connection on first.** It is four presses and no
+sign-in: open **Customize → Plugins → Ullbek — AI website builder → Connectors** and press **Connect**
+next to **ullbek** (the Directory page calls it **Finish setup**); Claude opens its **Add custom
+connector** form with Ullbek's details filled in, so press **Continue**; on the **Authentication** step
+leave **No sign-in** chosen and press **Add**; then press **Connect** once more. In Claude Code the
+tools are usually there as soon as the plugin is installed; if they aren't, run `/mcp`, choose
+**plugin:ullbek:ullbek** and **Authenticate**. Or ask Claude to "connect Ullbek" and it walks you
+through it (`/ullbek:connect`).
 
-If Claude says Ullbek isn't available or needs connecting first, connect it yourself. On claude.ai, the
-desktop app and Cowork: open **Customize → Plugins → Ullbek — AI website builder → Connectors**, and
-press **Connect** next to **ullbek** (the Directory page calls it **Finish setup**). In Claude Code, run `/mcp`, choose
-**plugin:ullbek:ullbek** and **Authenticate**. Or just ask Claude to "connect Ullbek" and it walks you
-through it (`/ullbek:connect`). Your browser opens Ullbek's sign-in page: continue with Google or email,
-or create a free account right there, and approve the connection.
+**Then just ask for a website.** Claude builds a private draft on Ullbek with no account. You connect a
+free Ullbek account when you want it published: Claude shows a sign-in card in the conversation (in
+Claude Code it asks you to run `/mcp`), and your browser opens Ullbek's sign-in page, where you
+continue with Google or email, or create a free account right there, and approve the connection. A
+draft nobody connects is kept for a week.
 
 ## Try it
 
